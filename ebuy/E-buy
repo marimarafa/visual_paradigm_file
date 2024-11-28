@@ -1,0 +1,50 @@
+1. Utente
+	1.1 nome:stringa
+	1.2 data_registrazione:data
+	1.3 acquisto oggetto con asta(vd3)
+	
+2. Post(Annunci):
+	2.1 descrizione:stringa
+	2.2 categoria:stringa
+	2.3 prezzo:intero>0
+	2.4 metodi pagamento:[bonifico-carta di credito]
+	2.5 stato oggetto :[nuovo-usato]
+	2.6 utente che pubblica (vd1)
+3. Post prev asta(post):
+	3.1 prezzo iniziale:intero>0
+	3.2 ammontare dei singoli singoli rialzi:Intero>0
+	3.3 l'istante di scadenza asta:DataOra
+4. Post non prevendono asta(post):
+	4.1 modalità vendita:Compralo subito
+	4.2 prezzo esclusivo:intero>0
+6. Oggetto
+	6.1 tipo[asta-senza asta]
+7.Venditore
+	7.1 specifica prezzo iniziale asta(vd3)
+	7.2 specifica esclusiva del prezzo senza asta(vd4)
+	7.3 specifica data di chiusura asta(vd3)
+5.Venditore oggetto nuovo
+	5.1 garanzia :intero>= 2
+8. Primo utente(utente)
+	8.1 acquisto oggetto senza asta (vd3)
+9. Bid
+	9.1 istante proposto:DataOra
+	9.2 Bidder (vd 10)
+10. Bidder 
+	10.1 proporre un bid (vd9)
+	10.2 propone acquisto oggetto(vd2)
+	1.4 aggiudicazione dell'oggetto di vendita al prezzo del bid(vd9)
+11. Utente web(utente)
+	11.1 pubblicazione oggetto con asta o senza(vd3-4)
+	11.2 proporre un nuovo bid tramite asta o senza(vd3-4-9)
+12. Asta conclusa
+	12.1 il bid che si è aggiudicato l'oggetto(vd9)
+	12.2 prezzo:intero>0
+13. Venditore oggetto usato
+	13.1 garanzia :intero>=0
+	14.dichiarazione condizioni:[ottimo-buono-discreto-da sistemare]
+
+	
+	
+		
+	
